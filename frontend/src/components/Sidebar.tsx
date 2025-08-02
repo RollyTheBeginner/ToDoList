@@ -37,17 +37,17 @@ export default function Sidebar() {
 
       {/* Main Navigation */}
       <section aria-label="Main Navigation">
-        <ul className="space-y-2">
-          <li>
-            <button className="flex items-center gap-2 hover:text-red-400">
-              <GoSearch className="text-lg" />
-              <span>Search</span>
-            </button>
-          </li>
+        <ul className="space-y-5">
           <li>
             <button className="flex items-center gap-2 hover:text-red-400">
               <PiPlusCircleFill className="text-2xl text-red-400" />
               <span>Add Task</span>
+            </button>
+          </li>
+          <li>
+            <button className="flex items-center gap-2 hover:text-red-400">
+              <GoSearch className="text-lg" />
+              <span>Search</span>
             </button>
           </li>
           <li>

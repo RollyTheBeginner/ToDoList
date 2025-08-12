@@ -50,7 +50,7 @@ export default function Sidebar({ onToggle }: { onToggle: () => void }) {
               </button>
             </li>
             <li>
-              <Link to="todaylist" className="flex items-center gap-2 hover:text-red-400 transition">
+              <Link to="/" className="flex items-center gap-2 hover:text-red-400 transition">
                 <GoCalendar className="text-lg" />
                 <span className="text-sm">Today</span>
               </Link>

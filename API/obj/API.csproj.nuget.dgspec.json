@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\API\\API.csproj": {}
+    "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\API\\API.csproj": {
+    "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\API\\API.csproj",
+        "projectPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj",
         "packagesPath": "C:\\Users\\RollyGJrCarrascal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\API\\obj\\",
+        "outputPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,7 +50,23 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.5, )"
             }
@@ -74,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

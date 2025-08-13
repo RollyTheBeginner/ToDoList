@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj": {}
   },
   "projects": {
@@ -12,12 +13,25 @@
         "projectPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\API.csproj",
         "packagesPath": "C:\\Users\\RollyGJrCarrascal\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\RollyGJrCarrascal\\Desktop\\ToDoList\\api\\obj\\",
+=======
+    "C:\\Users\\Rolly\\Desktop\\Git\\ToDoList\\API\\API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rolly\\Desktop\\Git\\ToDoList\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rolly\\Desktop\\Git\\ToDoList\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\Rolly\\Desktop\\Git\\ToDoList\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Rolly\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rolly\\Desktop\\Git\\ToDoList\\API\\obj\\",
+>>>>>>> 96fc6c0201d26fda215028e63a4e618dc8df05a7
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\RollyGJrCarrascal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rolly\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +64,7 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+<<<<<<< HEAD
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -57,11 +72,21 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+=======
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+>>>>>>> 96fc6c0201d26fda215028e63a4e618dc8df05a7
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.5, )"
             },
+<<<<<<< HEAD
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -69,6 +94,15 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.5, )"
+=======
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+>>>>>>> 96fc6c0201d26fda215028e63a4e618dc8df05a7
             }
           },
           "imports": [
@@ -90,7 +124,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 96fc6c0201d26fda215028e63a4e618dc8df05a7
         }
       }
     }

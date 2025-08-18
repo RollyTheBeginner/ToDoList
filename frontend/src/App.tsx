@@ -1,25 +1,22 @@
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Sidebar from "./components/Sidebar";
-import { Route, Routes } from "react-router-dom";
-import TodayList from "./pages/TodayListPage";
-import UpcomingList from "./pages/UpcomingListPage";
-import Completed from "./pages/CompletedPage";
+import TodayListPage from "./pages/TodayListPage";
+import UpcomingListPage from "./pages/UpcomingListPage";
+import CompletedPage from "./pages/CompletedPage";
 import ProjectPage from "./pages/ProjectPage";
+import OverduePage from "./pages/OverduePage";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsSidebarOpen(false);
-      } else {
-        setIsSidebarOpen(true);
-      }
+      setIsSidebarOpen(window.innerWidth >= 768);
     };
 
-    handleResize();
+    handleResize(); // initial check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -39,10 +36,11 @@ function App() {
 
         <main className="flex-1 overflow-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 2xl:px-64 py-2">
           <Routes>
-            <Route path="/" element={<TodayList />} />
-            <Route path="/upcominglist" element={<UpcomingList />} />
-            <Route path="/completed" element={<Completed />} />
-            <Route path="/projects" element={<ProjectPage />} />
+            <Route path="/" element={<TodayListPage />} />
+            <Route path="/upcominglist" element={<UpcomingListPage />} />
+            <Route path="/overdue" element={<OverduePage />} />
+            <Route path="/completed" element={<CompletedPage />} />
+            <Route path="/tasks/project/:projectId" element={<ProjectPage />} />
           </Routes>
         </main>
       </div>

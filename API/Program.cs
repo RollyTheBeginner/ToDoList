@@ -1,4 +1,6 @@
 using API.Data;
+using API.Interfaces;
+using API.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +18,13 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+
 var app = builder.Build();
+
+
+app.UseRouting();
 
 app.UseCors(opt =>
 {
@@ -26,7 +34,6 @@ app.UseCors(opt =>
 });
 
 app.MapControllers();
-app.UseRouting();
 
 DbInitializer.InitDb(app);
 
